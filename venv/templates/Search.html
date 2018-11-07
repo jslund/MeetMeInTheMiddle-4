@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Results</title>
+</head>
+<body>
+<div id="results">
+    <p> Average travel time is {{travel_time}} minutes</p>
+    {% for result in results %}}
+    <ul>{{ result.name }}, {{ result.rating }}</ul>
+    {% endfor %}}
+
+</div>
+</body>
+</html>
