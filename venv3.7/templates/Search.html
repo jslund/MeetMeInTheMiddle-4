@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Results</title>
+</head>
+<body>
+<div id="results">
+    <p> You're going to {{location}}</p>
+    <p> Average travel time is {{average__travel_time}} minutes</p>
+    <p> Travel times are:</p>
+    {% for k,v in origins.items() %}
+    <ul>{{k}} to {{location}} taking {{v}} minutes</ul>
+    {% endfor %}
+    <p> Heres some places to go!</p>
+    {% for result in results %}
+    <ul>{{ result.name }}, {{ result.rating }}</ul>
+    {% endfor %}
+
+</div>
+</body>
+</html>
